@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/infoStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="/"><img src="images/Logo.png" alt="logo"></a>
+        <nav>
+          <ul class="nav__links">
+              <li><a href="about.html">More About US</a></li>            
+          </ul>
+        </nav>
+        <a class="cta" href="index.html">Timer</a>
+        <p onclick="openNav()" class="menu cta">Menu</p>
+    </header>
+
+<!---   Info Section    -->
+    <section id = "infosec">
+        <div class="contact-info">
+            <div class="card">
+                <i class="icon fas fa-envelope"></i>
+                <div class="card-content">
+                    <h3>Email</h3>
+                    <span>andyd.soft@gmail.com</span>
+                </div>
+            </div>
+
+                <div class="card">
+                    <i class="icon fas fa-phone"></i>
+                    <div class="card-content">
+                        <h3>Phone & WhatsApp</h3>
+                        <span>+27 68 116 4726</span>               
+                    </div>
+                </div>
+
+            <div class="card">
+                <i class="icon fas fa-map-marker-alt"></i>
+                <div class="card-content">
+                    <h3>Location</h3>
+                    <span>Pretoria CBD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---     Footer    -->
+
+    <footer>
+        <section id="f_boxes">
+          <div class="f_container">
+            <div class="f_box">
+              <img src="./images/Copyright Line Kl.jpg" alt="Copyright" class="center">
+            </div>
+          </div>
+        </section>         
+      </footer>
+      <div id="mobile__menu" class="overlay">
+          <a class="close" onclick="closeNav()">&times;</a>
+          <div class="overlay__content">
+            <a href="about.html">More About US</a>
+            <a class="cta" href="index.html">Timer</a>
+          </div>            
+      </div>
+      <script type="text/javascript" src="./js/mobile.js"></script>
+</body>
+</html>

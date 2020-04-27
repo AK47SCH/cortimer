@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Lockdown Timer">
+	<meta name="keywords" content="lockdown, timer, time left">
+	<meta name="author" content="Andreas Schlag">
+	<title>Lockdown Timer | Welcome</title>
+    <link rel="stylesheet" href="./css/timerStyles.css"> 
+    <!--- <script src="/js/Script.js"></script>    ---> 
+  </head>
+  <body> 
+    <header>
+      <a class="logo" href="/"><img src="images/Logo.png" alt="logo"></a>      
+      <a class="cta" href="about.html">More About Us</a>
+      <p onclick="openNav()" class="menu cta">Menu</p>
+    </header>
+      <!--- <div>
+        <img class="marginauto" src="./images/Baerolina Profile.png" alt="centered image" />
+      </div> --->  
+      <table class = "countdownContainer">
+        <tr class = "infohead"> 
+          <td colspan = "4">Lockdown Timer for South Africa</td>
+        </tr>
+        <tr class = "info">
+          <td id = "days">9</td>
+          <td id = "hours">12</td>
+          <td id = "minutes">15</td>
+          <td id = "seconds">22</td>
+        </tr>
+        <tr class = "info">
+          <td>Days</td>
+          <td>Hours</td>
+          <td>Minutes</td>
+          <td>Seconds</td>
+        </tr>
+      </table>      
+ 
+      <footer>
+        <section id="f_boxes">
+          <div class="f_container">
+            <div class="f_box">
+              <img src="./images/Copyright Line Kl.jpg" alt="Copyright" align="bottom" class="center">
+            </div>
+          </div>
+        </section>
+      </footer> 
+
+      <div id="mobile__menu" class="overlay">
+        <a class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+            <a class="cta" href="about.html">More About Us</a>
+        </div>            
+      </div>
+    <script type="text/javascript" src="./js/mobile.js"></script>
+    <script type="text/javascript" src="./js/Script.js"></script>
+
+</body>
+</html>

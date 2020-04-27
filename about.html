@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="description" content="Afordable Software Development">
+	    <meta name="keywords" content="software, affordable software, professional software, web development, affordable web development, professional web development">
+	    <meta name="author" content="Andreas Schlag">
+      <title>Lockdown Timer | More Info About Us</title>
+      <link rel="stylesheet" href="./css/aboutStyles.css">
+      <!--- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"> --->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/6b7b61bbdd.js""></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="/"><img src="images/Logo.png" alt="logo"></a>
+            <nav>
+              <ul class="nav__links">
+                  <li><a href="info.html">Our Contact Details</a></li>            
+              </ul>
+            </nav>
+            <a class="cta" href="index.html">Back To Timer</a>
+            <p onclick="openNav()" class="menu cta">Menu</p>
+        </header>
+
+        <!-----   Overlay Cards       -->
+        <h1>OUR SERVICES</h1>
+        <h4>(Hover over images for detail)</h4>
+        <section id = "pricing">
+          <div class="card">
+            <div class="main-content">
+              <img src="./images/About 1b.jpg" alt="">                             
+            </div>
+            <div class="overlay-content">
+              <img src="./images/About 1a.jpg" alt="">                                          
+            </div>            
+          </div>
+          <div class="card">
+            <div class="main-content">
+              <img src="./images/About 2b.jpg" alt="">                             
+            </div>
+            <div class="overlay-content">
+              <img src="./images/About 2a.jpg" alt="">                                          
+            </div>            
+          </div>
+          <div class="card">
+            <div class="main-content">
+              <img src="./images/About 3b.jpg" alt="">                             
+            </div>
+            <div class="overlay-content">
+              <img src="./images/About 3a.jpg" alt="">                                          
+            </div>            
+          </div> 
+        </section>
+    
+          <!--- FOOTER -->
+
+        <footer>
+          <section id="f_boxes">
+            <div class="f_container">
+              <div class="f_box">
+                <img src="./images/Copyright Line Kl.jpg" alt="Copyright" class="center">
+              </div>
+            </div>
+          </section>         
+        </footer>
+        <div id="mobile__menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay__content">
+              <a href="info.html">Our Contact Details</a>
+              <a class="cta" href="index.html">Back To Timer</a>
+            </div>            
+        </div>
+        <script type="text/javascript" src="./js/mobile.js"></script>
+    </body>
+</html>
