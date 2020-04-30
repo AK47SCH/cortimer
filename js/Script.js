@@ -1,13 +1,13 @@
 
 
-function countDown(){
+function countUp(){
     var now = new Date();
-    var eventDate = new Date(2020, 4, 1);
+    var eventDate = new Date(2020, 3, 1);
 
     var currentTime = now.getTime();
     var eventTime = eventDate.getTime();
 
-    var remTime = eventTime - currentTime;
+    var remTime = currentTime - eventTime;
 
     var s = Math.floor(remTime / 1000);
     var m = Math.floor(s / 60);
@@ -18,9 +18,10 @@ function countDown(){
     m %= 60;
     s %= 60;
 
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
+    d = "00";
+    h = "00";
+    m = "00";
+    s = "00";
 
     document.getElementById("days").textContent = d;
     document.getElementById("hours").textContent = h;
@@ -32,7 +33,7 @@ function countDown(){
     //document.getElementById("minutes").innerText = m;
     //document.getElementById("seconds").innerText = s;
 
-    setTimeout(countDown, 1000);
+    setTimeout(countUp, 1000);
 }
 
-countDown();
+countUp();
